@@ -1,20 +1,32 @@
 /* SCREEN SIZE */
 
-@media (max-width: 480px) {}
-
-@media (min-width: 768px) and (max-width: 991px) {}
-
-@media (min-width: 1200px) {
-    /* DIV FOR SIZE */
-    .div-for-media {
-        width: 956px;
+@media (max-width: 480px) {
+    .header-logo {
+        padding-left: 8.34px;
     }
-    /* SIZES HEADER */
-    .logo {
-        padding: 30.24px 702.38px 29.93px 81.38px
+    .header-div-login-basket {
+        padding-right: 16px;
     }
-    button-enter {
-        /* padding: 16px 27px 702.38px 16px; */
+    .img-basket {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-logo {
+        padding-left: 8.34px;
+    }
+    .header-div-login-basket {
+        padding-right: 25.35px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .header-logo {
+        padding-left: 81.38px;
+    }
+    .header-div-login-basket {
+        padding-right: 97.05px;
     }
 }
 
@@ -26,55 +38,66 @@
 }
 
 
-/* HEADER */
+/* BODY */
 
-
-/* BACKGROUND */
-
-header {
-    height: 72px;
-    width: 100%;
-    background-size: cover;
-    background-color: #ffffff;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    /* Параметры тени */
-}
-
-
-/* FLEXBOX */
-
-.flex-box {
+body {
     display: flex;
 }
 
 
-/* LOGO */
+/* HEADER */
 
-.logo {
+header {
+    /* Размер и цвет */
+    height: 72px;
+    width: 100%;
+    background-size: cover;
+    background-color: #ffffff;
+    /* Параметры тени */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    /* flexbox */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
     width: 119.23px;
     height: 12.31px;
 }
 
-
-/* BUTTON */
-
-.button-enter {
-    justify-content: flex-end;
+.header-div-login-basket {
+    display: flex;
+    align-items: center;
 }
 
-button {
+.header-button {
+    background-color: #ffff;
     border: 1px solid #E0E0E0;
-    background-color: #FFFFFF;
-    color: black;
-    text-align: center;
-    text-decoration: none;
+    color: #1D1D1D;
     font-size: 13px;
+    /*  */
     padding: 14px 20px 14px 20px;
 }
 
-.basket {
-    justify-content: flex-end;
+.img-basket {
+    padding-left: 27px;
+    width: 18.95px;
+    height: 21.74px;
 }
 
 
 /* END HEADER */
+
+
+/* MAIN */
+
+
+/* SECTION */
