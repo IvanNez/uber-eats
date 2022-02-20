@@ -1,103 +1,208 @@
-/* SCREEN SIZE */
-
-@media (max-width: 480px) {
+    /* SCREEN SIZE */
+    
+    @media (max-width: 480px) {
+        .header-logo {
+            padding-left: 8.34px;
+        }
+        .header-div-login-basket {
+            padding-right: 16px;
+        }
+        .img-basket {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .header-logo {
+            padding-left: 8.34px;
+        }
+        .header-div-login-basket {
+            padding-right: 25.35px;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        .header-logo {
+            padding-left: 81.38px;
+        }
+        .header-div-login-basket {
+            padding-right: 97.05px;
+        }
+    }
+    /* MAIN */
+    
+    * {
+        margin: 0;
+    }
+    /* BODY */
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* HEADER */
+    
+    header {
+        /* Размер и цвет */
+        height: 72px;
+        width: 100%;
+        background-size: cover;
+        background-color: #ffffff;
+        /* Параметры тени */
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        /* flexbox */
+        display: flex;
+        /* justify-content: center; */
+    }
+    
+    .header-div {
+        width: 200%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     .header-logo {
-        padding-left: 8.34px;
+        width: 119.23px;
+        height: 12.31px;
     }
+    
     .header-div-login-basket {
-        padding-right: 16px;
+        display: flex;
+        align-items: center;
     }
+    
+    .header-button {
+        background-color: #ffff;
+        border: 1px solid #E0E0E0;
+        color: #1D1D1D;
+        font-size: 13px;
+        padding: 14px 20px 14px 20px;
+    }
+    
     .img-basket {
-        display: none;
+        padding-left: 27px;
+        width: 18.95px;
+        height: 21.74px;
     }
-}
-
-@media (max-width: 991px) {
-    .header-logo {
-        padding-left: 8.34px;
+    /* input */
+    
+    .body-div-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 79%;
+        height: 48px;
+        margin-top: 32px;
     }
-    .header-div-login-basket {
-        padding-right: 25.35px;
+    
+    .div-input {
+        width: 100%;
+        border: none;
+        border-bottom: solid;
+        border-bottom-color: #757575;
+        opacity: 0.3;
+        mix-blend-mode: normal;
     }
-}
-
-@media (min-width: 1000px) {
-    .header-logo {
-        padding-left: 81.38px;
+    
+    input:focus {
+        outline: none;
     }
-    .header-div-login-basket {
-        padding-right: 97.05px;
+    /* P */
+    
+    .body-div-restarans {
+        display: flex;
+        align-items: center;
+        width: 79%;
     }
-}
-
-
-/* MAIN */
-
-* {
-    margin: 0;
-}
-
-
-/* BODY */
-
-body {
-    display: flex;
-}
-
-
-/* HEADER */
-
-header {
-    /* Размер и цвет */
-    height: 72px;
-    width: 100%;
-    background-size: cover;
-    background-color: #ffffff;
-    /* Параметры тени */
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    /* flexbox */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.header-div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo {
-    width: 119.23px;
-    height: 12.31px;
-}
-
-.header-div-login-basket {
-    display: flex;
-    align-items: center;
-}
-
-.header-button {
-    background-color: #ffff;
-    border: 1px solid #E0E0E0;
-    color: #1D1D1D;
-    font-size: 13px;
-    /*  */
-    padding: 14px 20px 14px 20px;
-}
-
-.img-basket {
-    padding-left: 27px;
-    width: 18.95px;
-    height: 21.74px;
-}
-
-
-/* END HEADER */
-
-
-/* MAIN */
-
-
-/* SECTION */
+    
+    .restarans-text {
+        width: 100%;
+        margin-top: 56px;
+        font-size: 22px;
+        font-style: normal;
+    }
+    /* CARDS */
+    
+    .body-div-cards {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .cards {
+        height: 366px;
+        width: 308px;
+        padding: 16px 16px 16px 0px;
+    }
+    
+    .img-card {
+        width: 317.94px;
+        height: 256px;
+    }
+    
+    .name-product {
+        padding-top: 16px;
+    }
+    
+    .category-product {
+        padding-top: 4px;
+    }
+    
+    .time-product {
+        padding-top: 4px;
+        padding-bottom: 36px;
+    }
+    /* FOOTER */
+    
+    footer {
+        display: flex;
+        background-color: #262626;
+        height: 552px;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .footer-main {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 81.62px;
+        flex-direction: column;
+    }
+    
+    .footer-logo {}
+    
+    .logo-img-footer {
+        margin-bottom: 40.31px;
+        margin-top: 51px;
+    }
+    
+    .line {
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+    /* SELECT FOOTER */
+    
+    .selector {
+        text-align: center;
+        background-color: #3B3B3B;
+        width: 227px;
+        height: 40px;
+    }
+    
+    .select-footer {
+        font-size: 13px;
+        padding-right: 106px;
+        background-image: url(/img/Rectangle\ 9.svg);
+        box-shadow: none;
+        color: #E0E0E0;
+        /* border-color: #3B3B3B; */
+        border: none;
+    }
+    
+    .select-footer:focus {
+        outline: none;
+    }
